@@ -1,14 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <p>
-    judul
-  </p>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Vina+Sans&display=swap" rel="stylesheet">
+    <title>TamanWeb: Menghijaukan Dunia Digital dengan Ruang Terbuka Hijau</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: #228B22;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            width: 100%;
+            z-index: 1;
+        }
+        header > .area_logo
+        {
+            width: 50%;
+            display: flex;
+            padding-left: 20px;
+        }
+        header > .area_menu
+        {
+            width: 50%;
+            /*background-color: #FFFFFF;*/
+            display: flex;
+            margin-right: 20px;
+            justify-content: end;
+
+        }
+
+        header> .area_menu > a
+        {
+            margin-right: 8px;
+            /*border: 1px solid red;*/
+            color: azure;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        header > .area_menu > a:hover{
+            color: black;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        header > .area_menu > a::after{
+            content: '';
+            display: block;
+            padding-bottom: 2px;
+            border-bottom: 2px solid rgb(21, 136, 21);
+            transform: scaleX(0);
+        }
+        header > .area_menu > a:hover::after{
+            transform: scaleX(0.5);
+            transition: 0.2s linear;
+        }
+
+        .content{
+            min-height: 100px;
+        }
+
+        .content > .tagline{
+            width: 100%;
+            min-height: 100px;
+            display: flex;
+        }
+
+        .content > .welcome{
+            min-height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .content > .tag{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 25px;
+        }
+
+        .content > .article{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        footer{
+            min-height: 100PX;
+            background-color: #228B22;
+            display: flex;
+        }
+
+
+    </style>
 </head>
 <body>
-    wassup ma boy
+    <header>
+        <section class="area_logo">
+            <img src="" alt="Logo TamanWeb" style="height: 100px;">
+        </section>
+            <nav class="area_menu">
+                <a href="">Home</a>
+                <a href="">Profile</a>
+                <a href="">About Us</a>
+            </nav>
+    </header>
+    <main class="content">
+        <section class="tagline">
+            <img src="" alt="Tagline">
+        </section>
+           <section class="welcome">
+            <img src="Program/images/2333.jpg" alt="TamanWeb" style="height: max-content;">
+           </section>
+           <section class="tag">
+             TamanWeb 
+           </section>
+        <section class="article">
+            <a>
+                artikel1
+            </a>
+        </section>
+        <section class="article">
+            <a>
+                artikel2
+            </a>
+        </section>
+        <section class="article">
+            <a>
+                artikel2
+            </a>
+        </section>
+        <footer>
+            copyright
+        </footer>
+    
 </body>
 </html>
