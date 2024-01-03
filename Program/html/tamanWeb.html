@@ -6,8 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Vina+Sans&display=swap" rel="stylesheet">
-    <title>TamanWeb: Menghijaukan Dunia Digital dengan Ruang Terbuka Hijau</title>
+    <title>TamanWeb. Menghijaukan Dunia Digital dengan Ruang Terbuka Hijau</title>
     <style>
+        :root
+        {
+            --menu_hover_color: black;
+        }
         body{
             margin: 0;
         }
@@ -45,20 +49,21 @@
             text-decoration: none;
         }
         header > .area_menu > a:hover{
-            color: black;
-            text-decoration: underline;
-            font-weight: bold;
+            color: var(--menu_hover_color);
         }
+        
         header > .area_menu > a::after{
             content: '';
             display: block;
-            padding-bottom: 2px;
-            border-bottom: 2px solid rgb(21, 136, 21);
+            padding-bottom: 4px;
+            border-bottom: 2px solid var(--menu_hover_color);
             transform: scaleX(0);
+            transform-origin: 0;
+            translate: 0.2s;
         }
         header > .area_menu > a:hover::after{
-            transform: scaleX(0.5);
-            transition: 0.2s linear;
+            transform: scaleX(1);
+            transition: 0.3s linear;
         }
 
         .content{
@@ -69,6 +74,7 @@
             width: 100%;
             min-height: 100px;
             display: flex;
+            justify-content: center;
         }
 
         .content > .welcome{
@@ -103,13 +109,14 @@
 </head>
 <body>
     <header>
-        <section class="area_logo">
-            <img src="Logo Green Eco.png" alt="Logo TamanWeb" style="height: 100px;">
+        <section class="area_logo"  style="padding: 8px">
+            <img src="images/Logo.png" alt="Logo TamanWeb" style="height: 100px;" >
         </section>
             <nav class="area_menu">
                 <a href="">Home</a>
                 <a href="">Profile</a>
                 <a href="">About Us</a>
+                <a href=""></a>
             </nav>
     </header>
     <main class="content">
