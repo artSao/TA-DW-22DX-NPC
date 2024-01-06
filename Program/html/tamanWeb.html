@@ -8,6 +8,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Vina+Sans&display=swap" rel="stylesheet">
     <title>TamanWeb. Menghijaukan Dunia Digital dengan Ruang Terbuka Hijau</title>
     <style>
+         
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            color: #fff;
+            overflow: hidden;
+            padding: 1rem 2rem;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #367c39;
+        }
+
+        .hero {
+            background-image: url('path_to_your_hero_image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .grid-3 > div {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .grid-3 > div:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
         :root
         {
             --menu_hover_color: black;
@@ -131,21 +210,20 @@
             <img src="images/2333.jpg" alt="TamanWeb">
            </section>
            
-        <section class="article">
-            <a>
-                1. Wira garden
-            </a>
-        </section>
-        <section class="article">
-            <a>
-                2. Lembah Hijau
-            </a>
-        </section>
-        <section class="article">
-            <a>
-                3. Farm Day
-            </a>
-        </section>
+       <div class="grid-3">
+                <div>
+                    <h3>Wira Garden</h3>
+                    <p>Deskripsi singkat artikel tentang penghijauan.</p>
+                </div>
+                <div>
+                    <h3>Lembah Hijau</h3>
+                    <p>Deskripsi singkat artikel tentang konservasi lingkungan.</p>
+                </div>
+                <div>
+                    <h3>Farm Day</h3>
+                    <p>Deskripsi singkat artikel tentang tips ramah lingkungan.</p>
+                </div>
+            </div>
         <footer>
             copyright
         </footer>
