@@ -17,7 +17,6 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--primary);
   color: var(--latar);
-  min-height: 3000px;
 }
 
 /* navbar */
@@ -149,18 +148,21 @@ body {
 
 /* about section */
 .about,
-.info, .contact {
+.info,
+.contact {
   padding: 7rem 7% 1.4rem;
 }
 
 .about h2,
-.info h2, .contact h2 {
+.info h2,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
-.about h2 span, .contact h2 span {
+.about h2 span,
+.contact h2 span {
   color: var(--bg);
 }
 
@@ -193,10 +195,12 @@ body {
 }
 
 /* menu section */
-.menu h2, .contact h2 {
+.menu h2,
+.contact h2 {
   margin-bottom: 1rem;
 }
-.info p, .contact p {
+.info p,
+.contact p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -221,17 +225,55 @@ body {
   width: 80%;
 }
 
-.info .row .info-card-title{
-margin: 1rem auto 0.5rem;
+.info .row .info-card-title {
+  margin: 1rem auto 0.5rem;
 }
 
-/* .contact .row{
+.contact .row{
   display: flex;
-} */
+}
 
+/* footer */
+footer {
+  background-color: var(--bg);
+  text-align: center;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a{
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a :hover,
+footer .links a :hover{
+  color: var(--latar);
+}
+
+footer .links{
+  margin-bottom: 1.4rem;
+}
+
+footer .links a{
+  color: var(--latar);
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+font-size: 0.8rem;
+}
+
+footer .credit a{
+  color: var(--primary);
+  font-weight: 700;
+}
 
 /* media queries */
-
 /* Laptop */
 @media (max-width: 1366px) {
   html {
@@ -302,7 +344,7 @@ margin: 1rem auto 0.5rem;
     font-size: 1.6rem;
   }
 
-  .info p{
+  .info p {
     font-size: 1.2rem;
   }
 }
